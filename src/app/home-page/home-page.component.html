@@ -1,0 +1,42 @@
+<div class="container">
+<nav class="navbar navbar-light bg-light">
+    <!-- <form class="container-fluid justify-content-start"> -->
+    <button class="btn btn-outline-success me-2" type="button"(click)="all()">All</button>
+    <button class="btn btn-outline-success me-2" type="button" (click)="active()">Active</button>
+    <button class="btn btn-outline-success me-2" type="button"(click)="inactive()">Inactive</button>
+    <button class="btn btn-outline-success me-2" type="button"(click)="sorta()">Ascending</button>
+    <button class="btn btn-outline-success me-2" type="button"(click)="sortb()">Descending</button>
+    <div>
+        <h5>Username:{{this.emailid}}</h5>
+        <p>Count:{{data.length}}</p>
+    </div>
+
+
+</nav>
+<div >
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{item.name}}</td>
+                <td>{{item.status}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.price}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+<button type="button" (click)="logout()" routerlink="/">Logout</button>
+</div>

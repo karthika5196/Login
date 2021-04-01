@@ -1,0 +1,58 @@
+{
+    "Items": [{
+        "name" : "Karthika ",
+        "status":"active",
+        "category":" ",
+        "price":"1000"
+    },
+    {
+        "name" : "Kumar",
+        "status":"inactive",
+        "category":" ",
+        "price":"1000"
+    },
+    {
+        "name" : "Abinaya ",
+        "status":"active",
+        "category":" ",
+        "price":"1000"
+    },
+    {
+        "name" : "Gokul",
+        "status":"inactive",
+        "category":" ",
+        "price":"1000"
+    },
+    {
+        "name" : "Nantha",
+        "status":"active",
+        "category":" ",  
+        "price":"1000"
+    },
+    {
+        "name" : "Gayathri",
+        "status":"inactive",
+        "category":" ",
+        "price":"1000"
+    },
+    {
+        "name" : "Sindhu",
+        "status":"active",
+        "category":" ",  
+        "price":"1000"
+    },
+    {
+        "name" : "Ranjini",
+        "status":"inactive",
+        "category":" ",  
+        "price":"1000"
+    },
+    {
+        "name" : "Priya",
+        "status":"inactive",
+        "category":" ",  
+        "price":"1000"
+    }
+    
+    ]
+}

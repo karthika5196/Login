@@ -1,0 +1,35 @@
+input.ng-touched.ng-invalid {
+     border:1px solid red;
+}
+.container{
+    position:absolute;
+    
+    top:100px;
+    left:15%;
+
+}
+#eye i{
+    position:absolute;
+    margin-right:-100px;
+    margin-top:-30px;
+    cursor: pointer;
+}
+#clear{
+    float:right;
+}
+body{
+    box-sizing: border-box;
+    
+}
+.form-group {
+    padding-bottom: 20px;
+}
+/* #exampleInputPassword1 {
+ position: relative;
+}
+.container i{
+    position :absolute;
+    margin-top:-25px;
+    margin-left:30%;
+    cursor: pointer;
+} */

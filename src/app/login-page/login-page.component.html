@@ -1,0 +1,48 @@
+<div class="form-group column">
+    <div class="col-sm-11"><button type="button" id="clear" class="btn btn-secondary"
+            (click)="clearall()">Clear</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>Login</h1>
+    <form [formGroup]="register" (ngSubmit)="postdata()">
+        <div class="form-group row">
+            <label for="exampleInputEmail1" class="col-sm-2">Email address</label>
+            <div class="col-sm-5">
+                <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email"
+                    aria-describedby="emailHelp" placeholder="Enter email">
+
+                <span *ngIf="register.get('email').touched && register.get('email').hasError('required')">Enter Email
+                    Address</span>
+                <span *ngIf="register.get('email').touched && register.get('email').hasError('pattern')">Enter valid
+                    Email Address</span>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label for="exampleInputPassword1" class="col-sm-2">Password</label>
+            <div class="col-sm-5" id="eye">
+                <input [type]="mytexttype?'text':'password'" class="form-control" id="exampleInputPassword1"
+                    formControlName="password" placeholder="Password">
+
+                <span *ngIf="register.get('password').touched && register.get('password').hasError('required')">Enter
+                    Password</span>
+
+                <button type="button" (click)="togglepassword()"><i
+                        [class]="myclass?'fa fa-eye-slash':'fa fa-eye'"></i></button>
+            </div>
+
+
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-6">
+                <button type="submit" class="btn btn-primary" [disabled]="!register.valid"
+                    routerlink="/home">Submit</button>
+
+            </div>
+        </div>
+    </form>
+
+</div>
